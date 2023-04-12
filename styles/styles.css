@@ -51,7 +51,7 @@ h1 {
 
 h2 {
     font-size: 36px;
-    padding-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 .large-text {
@@ -176,11 +176,6 @@ body .flex {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-}
-
-.booking-page p:first-of-type, 
-.booking-page p:nth-of-type(2), 
-.day-selector li {
     font-size: 18px;
 }
 
