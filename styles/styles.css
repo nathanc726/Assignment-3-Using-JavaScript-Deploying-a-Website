@@ -42,11 +42,44 @@ body {
         - change the cursor to pointer.
 */
 
+h1 {
+    font-size: 48px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
 
+h2 {
+    font-size: 36px;
+    padding-bottom: 12px;
+}
 
+.large-text {
+    font-size: 24px;
+}
 
+.fake-button {
+    background-color: #E5AF42;
+    align-items: center;
+    line-height: 3;
+    border: 1px solid black;
+}
 
+a {
+    text-decoration: none;
+    color: black;
+}
 
+footer a:hover, main a:hover{
+    text-decoration: underline;
+}
+
+.fake-button:hover, .blue-hover:hover {
+    text-decoration: underline;
+    color: white;
+    background-color: #4278e5;
+    cursor: pointer;
+}
 
 
 /************* header/footer styling *************/
@@ -59,9 +92,33 @@ body {
     - the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
 */
 
+header, footer {
+    background-color: #E5AF42;
+}
+
+header .flex {
+    display: flex;
+    margin-bottom: 25px;
+    height: 150px;
+}
 
 
+header img{
+    width: 100px;
+    height: 100px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
 
+footer {
+    height: 90px; /*I put 90px instead of 60px as to look as similar as assignment sample.*/
+    font-weight: 200;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
 
 
 /************* index page *************/
@@ -74,9 +131,29 @@ body {
     - the pair of fake-buttons will be centered on the page. HINT: can calculate the required margin to make them appear to be centered.
 */
 
+body .flex {
+    display: flex;
+}
 
+.index img {
+    width: 300px;
+    padding-left: 25px;
+    margin-bottom: 50px;
+ }
 
+.index h2 {
+    line-height: 36px;
+}
 
+.index p {
+    margin-bottom: 12px;
+}
+
+.index .fake-button {
+    width: 250px;
+    margin-left: 150px;
+    text-align: center;
+}
 
 
 /************* bookings page *************/
@@ -93,17 +170,51 @@ body {
 
 */
 
+.booking-page {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
 
+.booking-page p:first-of-type, 
+.booking-page p:nth-of-type(2), 
+.day-selector li {
+    font-size: 18px;
+}
 
+.day-selector{
+    margin-bottom: 12px;
+    text-align: center;
+    gap: 20px;
+}
 
+li {
+    width: 60px;
+}
 
+li, .small-button {
+    border: 1px solid black;
+}
 
+.small-button {
+    padding: 5px;
+}
 
+.top-margin {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
 
+#clear-button {
+    width: 200px;
+    text-align: center;
+}
 
-
-
-
+.clicked {
+    background-color: #E5AF42;
+}
 
 /************* contact page *************/
 /* TO DO:
@@ -115,5 +226,37 @@ body {
 */
 
 
+.contact {
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
 
+label {
+    width: 150px;
+    text-align:right;
+    margin-right: 24px;
+}
 
+input {
+    width: 300px;
+}
+
+textarea {
+    height:150px;
+    width: 300px;
+}
+
+form input, form textarea, form button {
+    font-family: inherit;
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+#submit-button {
+    width: 308px;
+    margin-left: 174px;
+}
