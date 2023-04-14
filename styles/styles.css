@@ -24,7 +24,9 @@ body {
 
 /* TO DO: all elements with the .flex class applied are to be made into flex-box containers. */
 
-
+.flex {
+    display: flex;
+}
  
 
 /************* site-wide text styling *************/
@@ -44,7 +46,6 @@ body {
 
 h1 {
     font-size: 48px;
-    display: flex;
     margin: 0 auto;
     align-items: center;
 }
@@ -97,7 +98,6 @@ header, footer {
 }
 
 header .flex {
-    display: flex;
     margin-bottom: 25px;
     height: 150px;
 }
@@ -130,10 +130,6 @@ footer {
     - each fake-button on this page will be 250px wide with 150px of space between them.
     - the pair of fake-buttons will be centered on the page. HINT: can calculate the required margin to make them appear to be centered.
 */
-
-body .flex {
-    display: flex;
-}
 
 .index img {
     width: 300px;
