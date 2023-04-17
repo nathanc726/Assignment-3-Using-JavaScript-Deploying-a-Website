@@ -2,3 +2,15 @@
 
 // hint: you can change the style of an element by modifying the value of that element's .style.fontSize, or by updating its .classList.
 
+const submit_button = document.getElementById('submit-button');
+const contact_page = document.getElementById('contact-page');
+
+submit_button.addEventListener('click', function(event) {
+event.preventDefault();
+
+  const messageElement = document.createElement('p');
+  messageElement.textContent = 'Thank you for your message';
+  messageElement.style.fontSize = '24px';
+  contact_page.innerHTML = '';
+  contact_page.appendChild(messageElement);
+});
