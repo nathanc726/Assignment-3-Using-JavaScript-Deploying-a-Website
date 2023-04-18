@@ -8,9 +8,9 @@ const contact_page = document.getElementById('contact-page');
 submit_button.addEventListener('click', function(event) {
 event.preventDefault();
 
-  const messageElement = document.createElement('p');
-  messageElement.textContent = 'Thank you for your message';
-  messageElement.style.fontSize = '24px';
+  const message = document.createElement('p');
+  message.textContent = 'Thank you for your message';
+  message.style.fontSize = '24px';
   contact_page.innerHTML = '';
-  contact_page.appendChild(messageElement);
+  contact_page.appendChild(message);
 });
