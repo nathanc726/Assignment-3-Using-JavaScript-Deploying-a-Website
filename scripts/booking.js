@@ -17,6 +17,7 @@ const cost = document.getElementById('calculated-cost');
 
 let numberOfDays = 0;
 let selectedDays = [];
+let costPerDay = 35;
 
 // highlight or un-highlight day and re-calculation the cost
 dayButtons.forEach(button => {
@@ -58,7 +59,7 @@ function reset() {
     dayButtons.forEach(button => button.classList.remove('clicked'));
     fullButton.classList.add('clicked');
     halfButton.classList.remove('clicked');
-    costPerDay = 35;
+    costPerDay = fulldaycost;
     cost.innerHTML = '0';
   }
 
